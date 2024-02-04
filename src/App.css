@@ -11,6 +11,16 @@
     display: flex;
     justify-content: space-around;
 }
+.banner {
+    display: flex;
+    justify-content: center ;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+
+}
 .notification-container {
     position: fixed;
     left: 0;
@@ -131,4 +141,13 @@
     width: 100%;
     padding: 10px;
     text-align: center;
+}
+.footer{
+    background-color: #050505;
+    width: 100%;
+    
+    text-align: center;
+    padding: 15px ;    
+    color: #fff;
+    margin-top: 90px;
 }

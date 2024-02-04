@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
+
 const MovieCard = ({ movie, selectMovie }) => {
 
     const { name, image } = movie;

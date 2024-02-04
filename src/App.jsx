@@ -10,6 +10,8 @@ import { getActorsThunk } from './store/slices/actors.slice'
 import { getDirectorsThunk } from './store/slices/directors.slice'
 import { getMoviesThunk } from './store/slices/movies.slice'
 import MovieForm from './pages/MovieForm'
+import Footer from './components/Footer'
+import Banner from './components/Banner'
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
 
   return (
     <HashRouter>
+
       <NavBar />
+      <Banner/>
       <Notification />
       { isLoading && <LoadingScreen /> }
       <Container className='my-5'>
@@ -38,7 +42,9 @@ function App() {
           <Route path="/movies/update/:id" element={<MovieForm />} />
         </Routes>
       </Container>
+      <Footer/>
     </HashRouter>
+
   )
 }
 
