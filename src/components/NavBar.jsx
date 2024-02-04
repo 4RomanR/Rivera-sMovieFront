@@ -12,7 +12,7 @@ const NavBar = () => {
             <Navbar className='navbar-bg' variant="dark" expand="md">
                 <Container >
                     <Navbar.Brand className='navbar-logo' as={Link} to="/" >
-                        <img src="./img/logo.jpg" alt="logo" />
+                        <a href="https://main--serene-baklava-6cfce5.netlify.app/"><img src="./img/logo.jpg" alt="logo" /></a>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

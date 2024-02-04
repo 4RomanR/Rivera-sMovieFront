@@ -18,11 +18,14 @@ const Home = () => {
     }
 
     const navigate = useNavigate();
+    
 
     return (
         <Row>
             <Col md={3} xl={2}>
                 <h3>Filter by genre</h3>
+    
+                <div>
                 {genres.map(genre => (
                     <li
                         key={genre.id}
@@ -30,8 +33,16 @@ const Home = () => {
                         onClick={() => filterMovies(genre.id, "genres")}
                     >
                         {genre.name}
+                        
+                        
                     </li>
+                   
+             
+                    
                 ))}
+                </div>   
+                
+                    
             </Col>
             <Col>
                 <div className="d-flex justify-content-between align-items-start mb-4">
